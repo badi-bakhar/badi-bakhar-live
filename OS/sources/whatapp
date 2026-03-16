@@ -1,0 +1,11 @@
+name: whatapp
+when: 2026-03-17
+why: WhatsApp is a primary trusted channel for community knowledge — forwarded articles, voice notes, group discussions, and personal conversations carry real signal
+type: social
+url: ~
+description: WhatsApp as a knowledge source. Includes forwarded articles and links, voice notes with advice or analysis, group discussions on topics of interest, and direct conversations with trusted contacts. Community-curated, often ahead of mainstream coverage.
+
+notes:
+  Note who sent it or which group it came from — provenance matters here.
+  Voice notes should be transcribed or summarized before logging.
+  Forwarded content: trace to original source when possible, otherwise attribute as "via WhatsApp".

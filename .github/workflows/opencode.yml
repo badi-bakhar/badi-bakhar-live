@@ -1,0 +1,44 @@
+name: opencode
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+jobs:
+  opencode:
+    if: |
+      github.event_name == 'schedule' ||
+      github.event_name == 'workflow_dispatch' ||
+      contains(github.event.comment.body, '/oc') ||
+      contains(github.event.comment.body, '/opencode')
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Run OpenCode
+        uses: anomalyco/opencode/github@latest
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+        with:
+          model: amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0
+          prompt: |
+            You are the Badi Bakhar AI agent — a personal knowledge OS assistant.
+            Read AGENTS.md first. Then handle the request following the workflows defined there.
+            For scheduled runs (Monday 9am UTC): summarize the week's inbox, surface any unprocessed notes,
+            and open a GitHub issue with a weekly digest.
+            Never delete files. Never modify inbox/opencode. Always confirm before moving files.

@@ -1,0 +1,11 @@
+name: web
+when: 2026-03-17
+why: Capture knowledge from general internet browsing — articles, blogs, documentation, forums, and online reads
+type: web
+url: ~
+description: The open web as a knowledge source. Covers anything read online — blog posts, news articles, technical docs, forum answers, opinion pieces, research summaries. High volume, variable quality.
+
+notes:
+  Log with the specific URL and title when possible, not just "web".
+  Note the author or publication when credibility matters.
+  Tag with topic so web entries don't become a catch-all dump.

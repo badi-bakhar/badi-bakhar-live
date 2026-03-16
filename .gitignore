@@ -1,0 +1,13 @@
+# OpenCode node dependencies
+.opencode/node_modules/
+.opencode/bun.lockb
+
+# Live append-only AI session log — never commit
+inbox/opencode
+
+# OS X
+.DS_Store
+
+# Editor
+.vscode/
+.idea/

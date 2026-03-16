@@ -1,0 +1,28 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "instructions": ["AGENTS.md", "OS/sources/program.md"],
+  "autoupdate": true,
+  "share": "manual",
+  "permission": {
+    "bash": "ask"
+  },
+  "watcher": {
+    "ignore": [
+      ".opencode/node_modules/**",
+      "OS/data/**"
+    ]
+  },
+  "compaction": {
+    "auto": true,
+    "prune": true
+  },
+  "provider": {
+    "amazon-bedrock": {
+      "options": {
+        "region": "ap-south-1",
+        "profile": "badi-bakhar"
+      }
+    }
+  }
+}

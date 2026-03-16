@@ -1,0 +1,11 @@
+name: youtube
+when: 2026-03-17
+why: YouTube is a deep learning source — long-form educational videos, documentaries, expert talks, and channels followed regularly provide structured knowledge
+type: video
+url: https://youtube.com
+description: YouTube as a knowledge source. Covers educational channels, documentary content, conference talks, interviews, tutorials, and explainer videos. Longer format allows deeper treatment of topics compared to short-form media.
+
+notes:
+  Log with video title, channel name, and URL for easy retrieval.
+  Timestamp key moments when a full video has one important section.
+  Distinguish between watched fully, skimmed, and saved-to-watch — they carry different weight.
