@@ -22,23 +22,51 @@ The owner writes in **English and Hinglish** (Hindi-English code-switching). Bot
 ```
 badi-bakhar/
 ├── AGENTS.md                  ← YOU ARE HERE — loaded into every AI session
-├── opencode.json              ← OpenCode config; references AGENTS.md
+├── opencode.json              ← OpenCode config; Bedrock provider, references AGENTS.md
 ├── inbox/                     ← TRANSIT ZONE — nothing lives here permanently
-│   ├── opencode               ← AI tool call log (append-only, DO NOT EDIT)
-│   └── soal                   ← question capture queue (soal = question)
+│   ├── opencode               ← stub file (see plugin note below)
+│   ├── soal                   ← question capture queue (soal = question)
+│   └── README.md              ← inbox usage guide
+├── HQ/                        ← Mission control — system-level documents
+│   ├── MISSION.md             ← Purpose, metaphor, the three laws
+│   ├── STATUS.md              ← Current system state (update after each session)
+│   ├── CHANGELOG.md           ← Append-only log of all system changes
+│   ├── ROADMAP.md             ← Phase-based build plan
+│   └── REGISTRY.md            ← Master list of all 30 agents
+├── observability/             ← Metrics infrastructure
+│   ├── prometheus.yml         ← Prometheus scrape config
+│   ├── grafana-dashboard.json ← Grafana dashboard for tool call metrics
+│   └── install.sh             ← Setup script for Prometheus + Grafana
 ├── .opencode/                 ← OpenCode AI configuration layer
 │   ├── SOAL.md                ← project scratchpad / session context
 │   ├── package.json           ← plugin dependencies
-│   └── plugins/
-│       └── toolcallhistory.js ← logs every tool call to inbox/opencode
+│   ├── agents/                ← 28 agent definition files (ingester, researcher, etc.)
+│   ├── commands/              ← 3 custom commands: /ingest, /ask, /add-source
+│   ├── plugins/
+│   │   └── toolcallhistory.js ← pushes Prometheus metrics after every tool call
+│   └── skills/                ← 4 reusable skill fragments
+│       ├── badi-bakhar/       ← master system reference (directory map, naming, rules)
+│       ├── bedrock-models/    ← Bedrock model IDs and selection guidance
+│       ├── frontmatter/       ← frontmatter schema with examples by source type
+│       └── inbox-workflow/    ← step-by-step inbox processing procedure
 └── OS/                        ← The knowledge operating system
     ├── data/                  ← Processed, indexed knowledge (destination)
+    │   ├── web/               ← Web article notes
+    │   ├── youtube/           ← YouTube video notes
+    │   ├── whatsapp/          ← WhatsApp conversation notes
+    │   ├── instagram/         ← Instagram reel/post notes
+    │   ├── ideas/             ← Original thoughts and insights
+    │   ├── people/            ← Notes on people
+    │   ├── topics/            ← Structure notes aggregating links on a theme
+    │   ├── projects/          ← Active projects with defined end goals
+    │   ├── soal/              ← Processed questions from inbox/soal
+    │   └── agent-workspaces/  ← Scratch space for multi-step agent work
     └── sources/               ← Source REGISTRY (metadata, not content)
         ├── index.md           ← YAML list of all registered sources
         ├── program.md         ← Source schema definition
         ├── instagram          ← Instagram source record
         ├── web                ← Web source record
-        ├── whatapp            ← WhatsApp source record
+        ├── whatapp            ← WhatsApp source record (note: no 's')
         └── youtube            ← YouTube source record
 ```
 
@@ -47,11 +75,16 @@ badi-bakhar/
 | Path | Role | Permanent? |
 |------|------|------------|
 | `inbox/` | Transit zone for new captures | No |
-| `inbox/opencode` | AI session tool call log | Append-only system file |
+| `inbox/opencode` | Stub file — do not edit | System file |
 | `inbox/soal` | Question queue | Until processed |
+| `HQ/` | Mission control docs | Yes |
+| `observability/` | Prometheus + Grafana metrics config | Yes |
 | `OS/data/` | Final home for processed knowledge | Yes |
 | `OS/sources/` | Source metadata registry | Yes |
-| `.opencode/` | AI config and plugins | Yes |
+| `.opencode/agents/` | 28 agent definition files | Yes |
+| `.opencode/commands/` | 3 custom commands | Yes |
+| `.opencode/skills/` | 4 reusable skill fragments | Yes |
+| `.opencode/plugins/` | Prometheus metrics plugin | Yes |
 
 ---
 
@@ -210,26 +243,36 @@ Currently registered in `OS/sources/index.md`:
 
 | Name | Type | Description |
 |------|------|-------------|
-| `opencode` | plugin | Tool call history logger → `inbox/opencode` |
+| `opencode` | plugin | Tool call metrics → Prometheus Pushgateway |
+| `web` | web | General internet articles, blog posts, documentation |
+| `youtube` | youtube | Educational videos, talks, lectures |
+| `whatsapp` | whatsapp | Family/community group conversations and forwards |
+| `instagram` | instagram | Reels, carousels, educational creator content |
+| `paperclip` | web | AI agent orchestration patterns (github.com/paperclipai) |
+| `openfang` | web | Rust-based agent OS with WhatsApp channel support |
 
 ---
 
-## 8. Plugin Awareness — `inbox/opencode`
+## 8. Plugin Awareness — `inbox/opencode` and Observability
 
-The file `inbox/opencode` is written by `.opencode/plugins/toolcallhistory.js`. After **every tool call** in any OpenCode session, the plugin appends one JSON line:
+The file `.opencode/plugins/toolcallhistory.js` fires after **every tool call** in any OpenCode session. It pushes four Prometheus metrics to a Pushgateway at `localhost:9091`:
 
-```json
-{"time":"2026-03-17T10:00:00.000Z","tool":"read","sessionID":"...","callID":"...","args":{...},"title":"...","output":"...","metadata":{...}}
-```
+| Metric | Type | Description |
+|--------|------|-------------|
+| `toolcall_total` | counter | Tool calls per tool name, session, parent session |
+| `toolcall_output_bytes` | gauge | Output size per tool call |
+| `subagent_spawned_total` | counter | Subagent Task invocations per parent session + agent type |
+| `subagent_duration_seconds` | gauge | Wall-clock duration of each subagent session |
+
+The Grafana dashboard is at `observability/grafana-dashboard.json`. Prometheus config at `observability/prometheus.yml`. Setup script at `observability/install.sh`.
+
+The file `inbox/opencode` is a **stub** — it contains only a `##toolcallhistory` header line. It is not actively written by the plugin (metrics go to Pushgateway instead).
 
 ### What this means for AI behavior:
 
-- **This file is the AI's action memory across sessions**
-- When asked "what did you do last session?" or "what happened before?" — read `inbox/opencode`
-- **NEVER overwrite, truncate, or edit this file**
+- **NEVER overwrite, truncate, or edit `inbox/opencode`**
 - **NEVER include it in inbox processing**
-- It is append-only and managed entirely by the plugin
-- Reading it is safe and encouraged for context
+- For session history, check the Prometheus/Grafana metrics stack if running, or rely on session context within the current chat
 
 ---
 
@@ -276,4 +319,4 @@ This is a granary — it fills up grain by grain, harvest by harvest. Patience i
 
 ---
 
-*Last updated: 2026-03-17 — Agent 1 (architect)*
+*Last updated: 2026-03-17 — Agent 1 (architect); revised 2026-03-17 — system sync (directory map, plugin, skills, source registry)*
