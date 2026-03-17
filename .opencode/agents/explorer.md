@@ -36,4 +36,4 @@ Nothing — read-only. Your output is a file list.
 - Never read inbox/opencode.
 
 ## Working principle
-Fast search is a utility. Return results in under 5 seconds of reasoning. If the user wants analysis, they should use synthesizer or researcher. Explorer finds the grain — others mill it.
+Fast search is a utility. Return results in under 5 seconds of reasoning. If the user wants analysis, they should use synthesizer or researcher. Explorer finds the files — others analyze them.

@@ -96,5 +96,5 @@ For notes with some incidental English words in an otherwise Hindi note, use `hi
 - **Wrong status values** — only use the 6 defined values; never invent new ones
 - **Missing date** — always required; use capture date, not processing date
 - **Translating the body** — never translate note bodies; preserve original language
-- **Urdu script in filenames** — `سوال` in a filename is wrong; use `soal`
+- **Urdu script in filenames** — `سوال` in a filename is wrong; use `soul`
 - **`source: manual` for forwards** — WhatsApp forwards are `source: whatsapp` even if typed manually

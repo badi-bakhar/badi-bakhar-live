@@ -28,10 +28,10 @@ It has **11 members:**
 
 ## Why the name
 
-"बड़ी बाखर" (Badi Bakhar) = "The Great Granary" — a place where things are stored, preserved, passed down.
-The family group is a live feed of forwards, photos, reels, and conversation — exactly the kind of raw, mixed, daily knowledge flow that this OS is built to harvest.
+"बड़ी बाखर" (Badi Bakhar) in Bundelkhandi = "Big Family Home" — literally a cluster of houses in a village where the big family lives together.
+The family group is a live feed of forwards, photos, reels, and conversation — exactly the kind of raw, mixed, daily knowledge flow that this OS is built to capture and organize.
 
-Naming the OS after the group is intentional: the granary captures what the group produces.
+Naming the OS after the group is intentional: the knowledge home captures what the family produces and shares.
 
 ## Screenshots archived
 

@@ -1,5 +1,5 @@
 ---
-description: "Updates HQ/STATUS.md with current system state — inbox count, source health, granary stats"
+description: "Updates HQ/STATUS.md with current system state — inbox count, source health, knowledge home stats"
 mode: subagent
 model: amazon-bedrock/global.anthropic.claude-haiku-4-5-20251001-v1:0
 tools:

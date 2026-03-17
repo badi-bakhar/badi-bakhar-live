@@ -1,21 +1,21 @@
 # Badi Bakhar — Mission
 
-> **بڑی بکھار** — The Great Granary
+> **बड़ी बखार** — Big Family Home (Bundelkhandi: cluster of houses in a village)
 
 ---
 
 ## The Metaphor
 
-A granary does not discriminate. It accepts every grain — wheat, rice, barley. It stores it carefully,
-sorted by type, labeled by harvest, retrievable by need. Nothing rots if tended. Nothing is lost if
-the shelves are organized.
+In Bundelkhandi villages, a "bakhar" is a cluster of houses where a family lives together. The "badi bakhar"
+is the big family home — where everyone gathers, where knowledge and stories are shared across generations,
+where nothing of value is lost because someone always remembers.
 
-Badi Bakhar is that granary — but for knowledge.
+Badi Bakhar is your knowledge home.
 
-Every WhatsApp forward is a grain. Every YouTube video watched and noted is a grain. Every web article
-clipped, every Instagram reel that taught you something, every half-formed idea captured in a voice note
-— all grains. The granary's job is to receive them, sort them, and make them findable when the season
-demands it.
+Every WhatsApp forward is a conversation at the family table. Every YouTube video is wisdom shared by the elders.
+Every web article, every Instagram reel that taught you something, every half-formed idea — these are all
+part of your family's knowledge. This home's job is to receive them, organize them, and make them available
+when you need them.
 
 The enemy is not ignorance. It is *capture without storage*. You already encounter enough insight every
 day to build something remarkable. The problem is that it passes through you and disappears. This system
@@ -37,14 +37,14 @@ metadata. A registry of sources. AI agents that process, link, and surface what 
 
 You wake up. Someone sends you a link in WhatsApp — a thread on Urdu poetry. You forward it to the
 ingestion pipeline. The ingester picks it up, adds frontmatter, classifies it as reference knowledge,
-routes it to `OS/data/poetry/`. It tags it. It finds two notes already in the granary that link to
+routes it to `OS/data/poetry/`. It tags it. It finds two notes already in your knowledge home that link to
 the same poet. It surfaces that connection.
 
-By the time you sit down for chai, the grain is on the shelf. Labeled. Connected. Findable.
+By the time you sit down for chai, the knowledge is organized. Labeled. Connected. Findable.
 
 Six months from now, you're writing something about South Asian literary traditions. You ask the
 researcher agent. It finds the Urdu poetry note, the two connected notes, and a YouTube video you
-captured last October. The system knows what you know — because you built the habit of feeding it.
+captured last October. The system knows what you know — because you built the habit of maintaining it.
 
 That is the alive state. That is what we are building toward.
 
@@ -55,8 +55,8 @@ That is the alive state. That is what we are building toward.
 These are inviolable. Every agent, every session, every operation must respect them.
 
 **Law 1 — Never Delete. Archive.**
-No file is ever removed from the granary. If something is no longer needed, its `status` becomes
-`archived`. It stays on the shelf. You may need it in a harvest season you cannot predict today.
+No file is ever removed from the knowledge home. If something is no longer needed, its `status` becomes
+`archived`. It stays in the system. You may need it later in ways you cannot predict today.
 
 **Law 2 — Always Confirm Before Moving.**
 Files leave `inbox/` only with explicit user confirmation. The inbox is the receiving dock. Nothing
@@ -73,7 +73,7 @@ Stripping it destroys meaning.
 
 > **Time from capture to connected knowledge < 5 minutes.**
 
-From the moment a grain arrives at the inbox door to the moment it is on the shelf, tagged, and linked
+From the moment knowledge arrives in the inbox to the moment it is organized, tagged, and linked
 to what already exists — five minutes. That is the target. Fast enough that the habit forms. Slow enough
 that quality is maintained.
 
@@ -82,7 +82,7 @@ that quality is maintained.
 ## The Spirit
 
 *Yeh sirf ek folder system nahi hai. Yeh ek aadat hai — rozan kuch pakadna, rozan kuch samajhna.*
-*Granary tab kaam karta hai jab anaj roz aata hai. Badi Bakhar bhi wohi maangta hai — thodi si mehnat,
+*Ghar tab ghar banta hai jab har din kuch naya aata hai. Badi Bakhar bhi wohi maangta hai — thodi si mehnat,
 roz roz.*
 
 ---

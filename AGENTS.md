@@ -1,7 +1,7 @@
 # AGENTS.md — Badi Bakhar Knowledge OS
 
-> **Badi Bakhar** (بڑی بکھار) = "The Great Granary"
-> A personal AI-native knowledge operating system. Every piece of knowledge — a WhatsApp forward, a YouTube video, a web article, an Instagram reel — gets harvested, processed, and stored here, like grain brought into a granary.
+> **Badi Bakhar** (बड़ी बखार) = "Big Family Home" (Bundelkhandi: cluster of houses in a village)
+> A personal AI-native knowledge operating system. Every piece of knowledge — a WhatsApp forward, a YouTube video, a web article, an Instagram reel — gets captured, processed, and stored here in your knowledge home.
 
 ---
 
@@ -25,7 +25,7 @@ badi-bakhar/
 ├── opencode.json              ← OpenCode config; Bedrock provider, references AGENTS.md
 ├── inbox/                     ← TRANSIT ZONE — nothing lives here permanently
 │   ├── opencode               ← stub file (see plugin note below)
-│   ├── soal                   ← question capture queue (soal = question)
+│   ├── soul                   ← question capture queue (soul = question)
 │   └── README.md              ← inbox usage guide
 ├── HQ/                        ← Mission control — system-level documents
 │   ├── MISSION.md             ← Purpose, metaphor, the three laws
@@ -38,7 +38,7 @@ badi-bakhar/
 │   ├── grafana-dashboard.json ← Grafana dashboard for tool call metrics
 │   └── install.sh             ← Setup script for Prometheus + Grafana
 ├── .opencode/                 ← OpenCode AI configuration layer
-│   ├── SOAL.md                ← project scratchpad / session context
+│   ├── SOUL.md                ← project scratchpad / session context
 │   ├── package.json           ← plugin dependencies
 │   ├── agents/                ← 28 agent definition files (ingester, researcher, etc.)
 │   ├── commands/              ← 3 custom commands: /ingest, /ask, /add-source
@@ -59,7 +59,7 @@ badi-bakhar/
     │   ├── people/            ← Notes on people
     │   ├── topics/            ← Structure notes aggregating links on a theme
     │   ├── projects/          ← Active projects with defined end goals
-    │   ├── soal/              ← Processed questions from inbox/soal
+    │   ├── soul/              ← Processed questions from inbox/soul
     │   └── agent-workspaces/  ← Scratch space for multi-step agent work
     └── sources/               ← Source REGISTRY (metadata, not content)
         ├── index.md           ← YAML list of all registered sources
@@ -76,7 +76,7 @@ badi-bakhar/
 |------|------|------------|
 | `inbox/` | Transit zone for new captures | No |
 | `inbox/opencode` | Stub file — do not edit | System file |
-| `inbox/soal` | Question queue | Until processed |
+| `inbox/soul` | Question queue | Until processed |
 | `HQ/` | Mission control docs | Yes |
 | `observability/` | Prometheus + Grafana metrics config | Yes |
 | `OS/data/` | Final home for processed knowledge | Yes |
@@ -112,8 +112,8 @@ YYYY-MM-DD-ascii-lowercase-slug.md
 
 If the title is in Hindi/Urdu, **romanize** it for the filename:
 - "चाय पानी" → `chai-paani`
-- "سوال" → `soal`
-- "بڑی بکھار" → `badi-bakhar`
+- "सवाल" → `soul`
+- "बड़ी बखार" → `badi-bakhar`
 
 ---
 
@@ -189,7 +189,7 @@ Read the content and determine:
 |------|----------|-------------|
 | **Reference** | Knowledge to keep and query later | `OS/data/` |
 | **Action** | Something to do, a task or project | `OS/data/projects/` |
-| **Soal** | A question to investigate | `OS/data/soal/` |
+| **Soul** | A question to investigate | `OS/data/soul/` |
 | **Discard** | Noise, duplicates, expired content | Set `status: archived` |
 | **Uncertain** | Can't decide | Leave in `inbox/`, set `status: needs-review` |
 
@@ -210,7 +210,7 @@ Only after user confirms. Never delete — use `status: archived` for anything n
 
 ### Notes
 - `inbox/opencode` is **off-limits** — skip it entirely during processing
-- `inbox/soal` contains question captures — route to `OS/data/soal/`
+- `inbox/soul` contains question captures — route to `OS/data/soul/`
 - When uncertain about category: leave in inbox, set `status: needs-review`
 
 ---
@@ -315,7 +315,7 @@ Badi Bakhar is intentionally minimal. The current structure is a scaffold, not a
 
 **What comes next is driven by what actually gets captured.** If WhatsApp is the primary source, the `whatapp` source record gets filled in. If YouTube notes pile up, `OS/data/youtube/` gets created. Not before.
 
-This is a granary — it fills up grain by grain, harvest by harvest. Patience is part of the design.
+This is your knowledge home — it grows organically, piece by piece, as you capture and process. Patience is part of the design.
 
 ---
 

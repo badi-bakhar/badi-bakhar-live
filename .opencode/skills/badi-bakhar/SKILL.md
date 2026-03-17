@@ -11,7 +11,7 @@ description: "Master reference for the Badi Bakhar knowledge OS — directory st
 |------|------|------------|
 | `inbox/` | Transit zone for new captures | No |
 | `inbox/opencode` | AI session tool call log (append-only) | System file — never edit |
-| `inbox/soal` | Question capture queue | Until processed |
+| `inbox/soul` | Question capture queue | Until processed |
 | `OS/data/` | Final home for processed knowledge | Yes |
 | `OS/sources/` | Source metadata registry | Yes |
 | `.opencode/` | AI config and plugins | Yes |
@@ -25,7 +25,7 @@ Pattern: `YYYY-MM-DD-ascii-lowercase-slug.md`
 - All lowercase, words separated by hyphens
 - No spaces, no special characters, no underscores
 - Extension always `.md`
-- Romanize Hindi/Urdu titles: "चाय पानी" → `chai-paani`, "سوال" → `soal`
+- Romanize Hindi/Urdu titles: "चाय पानी" → `chai-paani`, "सवाल" → `soul`
 
 ## Frontmatter Schema
 
@@ -78,7 +78,7 @@ raw → processed → linked → evergreen
 ## Inbox Processing Procedure
 
 1. **Scan** — find all files in `inbox/` with `status: raw` or no frontmatter
-2. **Classify** — determine type: Reference, Action, Soal, Discard, Uncertain
+2. **Classify** — determine type: Reference, Action, Soul, Discard, Uncertain
 3. **Prepare** — add/update frontmatter; set `status: processed`
 4. **Confirm** — show user: current path, proposed destination, proposed frontmatter
 5. **Move** — only after user confirms

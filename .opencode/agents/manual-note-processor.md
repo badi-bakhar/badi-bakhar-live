@@ -20,7 +20,7 @@ All files in inbox/ with `source: manual` or no source at all, where the content
 ## Procedure
 1. Read the inbox file exactly as written.
 2. Detect language: en / hi / hi-en / ur / mixed.
-3. Determine the best OS/data/ subdirectory: ideas/, topics/, projects/, people/, soal/, or create a new one only if nothing fits.
+3. Determine the best OS/data/ subdirectory: ideas/, topics/, projects/, people/, soul/, or create a new one only if nothing fits.
 4. Generate a slug from the content title or first meaningful line.
 5. Add minimal frontmatter: title, date (today if not specified), source: manual, status: raw, lang, tags (2–5 suggested tags).
 6. Propose the destination path: `OS/data/<subdirectory>/YYYY-MM-DD-slug.md`.
@@ -34,4 +34,4 @@ All files in inbox/ with `source: manual` or no source at all, where the content
 - Never edit inbox/opencode.
 
 ## Working principle
-Manual notes are the owner's direct voice. Intervention should be invisible — add the minimum structure needed to make it findable, then step back. The granary stores grain, not your interpretation of it.
+Manual notes are the owner's direct voice. Intervention should be invisible — add the minimum structure needed to make it findable, then step back. The knowledge home stores knowledge, not your interpretation of it.

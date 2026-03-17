@@ -39,4 +39,4 @@ A note is a candidate for archiving if ANY of the following:
 - Never edit inbox/opencode.
 
 ## Working principle
-Archiving is not deletion. An archived note is still in the granary — just marked as no longer actively useful. The permanence rule exists because you cannot un-delete. Confirm before every change. No exceptions.
+Archiving is not deletion. An archived note is still in the knowledge home — just marked as no longer actively useful. The permanence rule exists because you cannot un-delete. Confirm before every change. No exceptions.

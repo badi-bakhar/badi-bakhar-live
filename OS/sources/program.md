@@ -3,7 +3,7 @@
 This file defines the schema for all knowledge sources in Badi Bakhar.
 Every channel through which knowledge arrives — a YouTube channel, a WhatsApp contact, a website, a plugin —
 gets registered here with this schema. Sources are not the content itself; they are the pipes through which
-content flows into the granary. Registering a source is a declaration of intent: "knowledge comes from here."
+content flows into the knowledge home. Registering a source is a declaration of intent: "knowledge comes from here."
 
 ---
 
@@ -18,7 +18,7 @@ content flows into the granary. Registering a source is a declaration of intent:
 ### `when`
 - **Type:** date (`YYYY-MM-DD`)
 - **Required:** yes
-- **Description:** Date this source was registered in the granary.
+- **Description:** Date this source was registered in the knowledge home.
 - **Example:** `2026-03-17`
 
 ### `why`

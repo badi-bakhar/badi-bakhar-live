@@ -7,7 +7,7 @@ Process the inbox. Follow these steps exactly:
 
 ## Step 1 — Scan inbox/
 
-List all files in `inbox/`. Skip `inbox/opencode` entirely — never read, move, or modify it. Also skip `inbox/soal` for now unless it has unprocessed entries.
+List all files in `inbox/`. Skip `inbox/opencode` entirely — never read, move, or modify it. Also skip `inbox/soul` for now unless it has unprocessed entries.
 
 For every other file, read its content and check for frontmatter. Files with `status: raw`, `status: open`, or no frontmatter at all are candidates for processing.
 
@@ -15,11 +15,11 @@ For every other file, read its content and check for frontmatter. Files with `st
 
 For each candidate file, determine:
 
-1. **Type**: Is it a reference (knowledge to keep), an action/project (something to do), a soal (a question to investigate), or discard (noise/duplicate/expired)?
+1. **Type**: Is it a reference (knowledge to keep), an action/project (something to do), a soul (a question to investigate), or discard (noise/duplicate/expired)?
 2. **Destination**:
    - Reference → `OS/data/` (create a subdirectory if a clear category warrants one)
    - Action/Project → `OS/data/projects/`
-   - Soal → `OS/data/soal/`
+   - Soul → `OS/data/soul/`
    - Discard → stay in inbox, set `status: archived`
    - Uncertain → stay in inbox, set `status: needs-review`
 
@@ -30,7 +30,7 @@ For each file, produce a summary block like this:
 ```
 FILE: inbox/<filename>
 SUMMARY: <2-3 sentence summary of the content>
-TYPE: reference | action | soal | discard | uncertain
+TYPE: reference | action | soul | discard | uncertain
 PROPOSED DESTINATION: OS/data/<path>/<new-filename>.md
 PROPOSED FILENAME: YYYY-MM-DD-ascii-lowercase-slug.md
 PROPOSED FRONTMATTER:

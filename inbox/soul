@@ -1,18 +1,18 @@
-# soal — question inbox
-# "soal" (سوال) = question in Urdu/Hindi
+# soul — question inbox
+# "soul" (सवाल) = question in Hindi
 #
-# This file is a capture queue. Append new soals at the bottom.
+# This file is a capture queue. Append new souls at the bottom.
 # Process weekly. Fill `answer:` when resolved. Change `status:` as you go.
 # Supported statuses: open | exploring | answered | archived
 # Supported urgency:  low | medium | high
 
 # ─────────────────────────────────────────────
-# TEMPLATE  (copy this block for each new soal)
+# TEMPLATE  (copy this block for each new soul)
 # ─────────────────────────────────────────────
 #
 # ---
 # date:     YYYY-MM-DD
-# soal:     |
+# soul:     |
 #   Write your question here. Any language is fine —
 #   English, Hindi, Hinglish, Urdu, whatever feels natural.
 # context:  Where did this come from? (YouTube video, book, conversation, shower thought…)
@@ -27,26 +27,26 @@
 
 ---
 date:     2026-03-17
-soal:     |
+soul:     |
   What is the difference between a system and a habit?
   A habit feels automatic, but a system seems like it requires design.
   Are they the same thing at different scales?
 context:  James Clear interview on the Tim Ferriss podcast (ep. 430)
 urgency:  low
 status:   archived
-moved_to: OS/data/soal/2026-03-17-system-vs-habit.md
+moved_to: OS/data/soul/2026-03-17-system-vs-habit.md
 answer:   ~
 ---
 
 ---
 date:     2026-03-17
-soal:     |
+soul:     |
   Agar main har cheez "second brain" mein daal raha hoon,
   toh phir actually sochta kab hoon? Capture aur thinking
   mein difference kya hai — ya sirf hoarding hai ye sab?
 context:  WhatsApp pe dost ke saath baat ho rahi thi PKM ke baare mein
 urgency:  medium
 status:   archived
-moved_to: OS/data/soal/2026-03-17-capture-vs-thinking.md
+moved_to: OS/data/soul/2026-03-17-capture-vs-thinking.md
 answer:   ~
 ---

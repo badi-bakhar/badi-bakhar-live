@@ -33,4 +33,4 @@ Nothing — you are read-only. Your output is a report for the user to act on.
 - Never read inbox/opencode.
 
 ## Working principle
-Duplicates dilute the granary. A note that says the same thing as another note wastes retrieval attention. Report clearly — the user makes the final call on every merge or archive.
+Duplicates dilute the knowledge home. A note that says the same thing as another note wastes retrieval attention. Report clearly — the user makes the final call on every merge or archive.

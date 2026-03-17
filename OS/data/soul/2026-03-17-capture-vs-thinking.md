@@ -11,7 +11,7 @@ tags: [pkm, second-brain, thinking, capture, hoarding]
 
 ---
 
-## Soal
+## Soul
 
 Agar main har cheez "second brain" mein daal raha hoon,
 toh phir actually sochta kab hoon? Capture aur thinking

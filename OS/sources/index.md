@@ -1,7 +1,7 @@
 # Badi Bakhar — Source Registry
 Last updated: 2026-03-17 (2 web sources added)
 
-All knowledge sources registered in this granary. Each entry follows the schema defined in `program.md`.
+All knowledge sources registered in this knowledge home. Each entry follows the schema defined in `program.md`.
 
 ---
 

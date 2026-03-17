@@ -11,7 +11,7 @@ description: "Step-by-step inbox processing procedure — how to triage, classif
 |------|----------|-------------|
 | **Reference** | Knowledge to keep and query later | `OS/data/` |
 | **Action** | A task, project, or thing to do | `OS/data/projects/` |
-| **Soal** | A question to investigate | `OS/data/soal/` |
+| **Soul** | A question to investigate | `OS/data/soul/` |
 | **Discard** | Noise, duplicates, expired content | Set `status: archived`, leave in inbox |
 | **Uncertain** | Can't decide | Leave in `inbox/`, set `status: needs-review` |
 
@@ -19,7 +19,7 @@ description: "Step-by-step inbox processing procedure — how to triage, classif
 
 ```
 Is it a question to investigate?
-  → Yes: Soal → OS/data/soal/
+  → Yes: Soul → OS/data/soul/
 
 Is it a task or project?
   → Yes: Action → OS/data/projects/
@@ -56,7 +56,7 @@ Still unsure?
 | Reference (general) | `OS/data/YYYY-MM-DD-slug.md` |
 | Reference (by topic) | `OS/data/<topic>/YYYY-MM-DD-slug.md` if directory exists |
 | Action / Project | `OS/data/projects/YYYY-MM-DD-slug.md` |
-| Soal | `OS/data/soal/YYYY-MM-DD-slug.md` |
+| Soul | `OS/data/soul/YYYY-MM-DD-slug.md` |
 
 Create subdirectories under `OS/data/` only if a category already has enough notes — do not speculate structure.
 
@@ -89,7 +89,7 @@ Proceed?
 | URL only, no content | Set `status: needs-review`; note that content needs fetching |
 | Image description | Source = `instagram` or `whatsapp` as appropriate; describe in body |
 | Multi-language content | Use `lang: mixed`; preserve all languages in body |
-| Soal already in `inbox/soal` | Route directly to `OS/data/soal/` — same workflow applies |
+| Soul already in `inbox/soul` | Route directly to `OS/data/soul/` — same workflow applies |
 
 ## Files That Must Never Be Touched
 

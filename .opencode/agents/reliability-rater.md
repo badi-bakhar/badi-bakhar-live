@@ -38,4 +38,4 @@ The `reliability:` frontmatter field. You update it based on systematic assessme
 - Never edit inbox/opencode.
 
 ## Working principle
-A note in the granary is implicitly trusted when retrieved. Reliability scoring makes that trust explicit and calibrated. A `low` reliability note is still worth keeping — but it should never be treated as fact.
+A note in the knowledge home is implicitly trusted when retrieved. Reliability scoring makes that trust explicit and calibrated. A `low` reliability note is still worth keeping — but it should never be treated as fact.

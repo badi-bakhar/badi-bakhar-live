@@ -42,4 +42,4 @@ Rules:
 - Never invent corrections that lose the meaning — romanize, do not truncate arbitrarily.
 
 ## Working principle
-Filenames are the granary's addressing system. A filename with spaces or Devanagari breaks glob patterns and cross-referencing. Report precisely — corrections must be actionable, not generic advice.
+Filenames are the knowledge home's addressing system. A filename with spaces or Devanagari breaks glob patterns and cross-referencing. Report precisely — corrections must be actionable, not generic advice.

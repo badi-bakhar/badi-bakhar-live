@@ -6,7 +6,7 @@ Last updated: 2026-03-17
   - web/: 2 (paperclip, openfang)
   - whatsapp/: 1 (badi-bakhar-whatsapp-group)
   - projects/: 1 (avrio-ops-agent-google-chat-api)
-  - soal/: 2 (system-vs-habit, capture-vs-thinking)
+  - soul/: 2 (system-vs-habit, capture-vs-thinking)
   - root: 1 (badi-bakhar-origin)
   - agents-workspaces/, ideas/, instagram/, people/, topics/, youtube/: READMEs only
 - Registered sources: 7 (opencode, web, youtube, whatsapp, instagram, paperclip, openfang)
@@ -16,7 +16,7 @@ Last updated: 2026-03-17
 - Skills: 4 (badi-bakhar, bedrock-models, frontmatter, inbox-workflow)
 
 ## Inbox
-- inbox/soal: 2 entries, both status: archived (moved to OS/data/soal/)
+- inbox/soul: 2 entries, both status: archived (moved to OS/data/soul/)
 - inbox/opencode: stub file — ##toolcallhistory header only (never edit)
 - inbox/badi-bakhar-hq: status: archived
 - inbox/README.md: system doc (permanent)
@@ -37,12 +37,12 @@ Last updated: 2026-03-17
 - 2026-03-17: Sources registered: web, youtube, whatsapp, instagram, paperclip, openfang
 - 2026-03-17: Bedrock IAM user opencode-badi-bakhar created
 - 2026-03-17: GitHub org badi-bakhar live at https://github.com/badi-bakhar
-- 2026-03-17: Inbox processed — 6 screenshots → 2 notes, 2 soals → OS/data/soal/
+- 2026-03-17: Inbox processed — 6 screenshots → 2 notes, 2 souls → OS/data/soul/
 - 2026-03-17: AGENTS.md synced — directory map, plugin description, skills, source registry updated
 
 ## Next Actions
 - [ ] Confirm Prometheus + Grafana stack running (run observability/install.sh)
 - [ ] Set GitHub Actions secrets: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION
-- [ ] Investigate soal: system vs habit (OS/data/soal/2026-03-17-system-vs-habit.md)
-- [ ] Investigate soal: capture vs thinking (OS/data/soal/2026-03-17-capture-vs-thinking.md)
+- [ ] Investigate soul: system vs habit (OS/data/soul/2026-03-17-system-vs-habit.md)
+- [ ] Investigate soul: capture vs thinking (OS/data/soul/2026-03-17-capture-vs-thinking.md)
 - [ ] Process Dad's Facebook reel (https://www.facebook.com/share/r/16wPTkc3D9/) — add to OS/data/web/ or whatsapp/

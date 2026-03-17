@@ -8,7 +8,7 @@ Build as you go. No dates. Each phase unlocks the next.
 
 The scaffold is in place. The system can receive AI sessions and the structure is defined.
 
-- AGENTS.md written — the constitution of the granary
+- AGENTS.md written — the constitution of the knowledge home
 - opencode.json configured with Amazon Bedrock provider (ap-south-1)
 - OS/ directory structure scaffolded with 9 data subdirectories
 - 6 sources registered in OS/sources/: web, youtube, whatsapp, instagram, paperclip, openfang
@@ -30,7 +30,7 @@ The intelligence layer. Agents that intake, enrich, retrieve, and maintain.
 
 ## Phase 3 — Capture Pipeline
 
-The arteries of the granary. Content flows in automatically.
+The arteries of the knowledge home. Content flows in automatically.
 
 - WhatsApp ingestion via OpenFang gateway — forwards arrive as files in `inbox/`
 - YouTube notes workflow — transcript extraction or manual timestamped notes
@@ -42,19 +42,19 @@ The arteries of the granary. Content flows in automatically.
 
 ## Phase 4 — Knowledge Graph
 
-The shelf organization. Notes connect to each other; the granary becomes a web.
+The organization. Notes connect to each other; the home becomes a web.
 
 - Linker agent active — every new note scanned for connections to existing notes
 - Tag vocabulary enforced — tag-vocabulary-keeper maintains the controlled list
 - Evergreen promotion pipeline — evergreen-evaluator runs on processed notes
 - Duplicate detection — duplicate-detector flags redundant captures before filing
-- Soal investigation loop — soal-investigator researches questions, closes them with linked answers
+- Soul investigation loop — soul-investigator researches questions, closes them with linked answers
 
 ---
 
 ## Phase 5 — GitHub Integration
 
-The granary gets a public interface. External triggers become knowledge workflows.
+The knowledge home gets a public interface. External triggers become knowledge workflows.
 
 - GitHub Actions `opencode.yml` workflow running on schedule and `/oc` comment trigger
 - Weekly Monday digest issue opened automatically by weekly-reviewer agent
@@ -66,11 +66,11 @@ The granary gets a public interface. External triggers become knowledge workflow
 
 ## Phase 6 — Review Rituals
 
-The granary earns its keep through regular use, not just accumulation.
+The knowledge home earns its value through regular use, not just accumulation.
 
-- Weekly review session: weekly-reviewer agent surfaces unprocessed notes, stale soals, tag drift
+- Weekly review session: weekly-reviewer agent surfaces unprocessed notes, stale souls, tag drift
 - Monthly digest: gap-analyst identifies knowledge areas with no captures — surfaces blind spots
-- Soal resolution loop: every soal gets an investigation, an answer, and a linked note or closure
+- Soul resolution loop: every soul gets an investigation, an answer, and a linked note or closure
 - Evergreen audit: evergreen-evaluator re-evaluates promoted notes for continued relevance
 - Archive sweep: archive-manager reviews `status: archived` notes quarterly — confirms they can stay archived
 

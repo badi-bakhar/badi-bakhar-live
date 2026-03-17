@@ -11,7 +11,7 @@ tags: [systems-thinking, habits, james-clear, tim-ferriss]
 
 ---
 
-## Soal
+## Soul
 
 A habit feels automatic, but a system seems like it requires design.
 Are they the same thing at different scales?

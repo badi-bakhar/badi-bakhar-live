@@ -17,7 +17,7 @@ All 30 agents in the Badi Bakhar knowledge OS. This is the master registry.
 | 11 | evergreen-evaluator | Enrichment | subagent | no | sonnet | pending |
 | 12 | duplicate-detector | Enrichment | subagent | no | haiku | pending |
 | 13 | reliability-rater | Enrichment | subagent | no | haiku | pending |
-| 14 | soal-investigator | Enrichment | primary | yes | sonnet | pending |
+| 14 | soul-investigator | Enrichment | primary | yes | sonnet | pending |
 | 15 | researcher | Retrieval | primary | no | sonnet | active |
 | 16 | explorer | Retrieval | subagent | no | sonnet | pending |
 | 17 | synthesizer | Retrieval | subagent | no | sonnet | pending |
@@ -29,7 +29,7 @@ All 30 agents in the Badi Bakhar knowledge OS. This is the master registry.
 | 23 | archive-manager | Maintenance | subagent | yes | haiku | pending |
 | 24 | session-historian | Session Intel | subagent | no | haiku | pending |
 | 25 | context-loader | Session Intel | subagent | no | haiku | pending |
-| 26 | soal-queue-manager | Session Intel | primary | yes | haiku | pending |
+| 26 | soul-queue-manager | Session Intel | primary | yes | haiku | pending |
 | 27 | weekly-reviewer | Session Intel | primary | yes | sonnet | pending |
 | 28 | voice-note-handler | Specialized | subagent | yes | sonnet | pending |
 | 29 | url-extractor | Specialized | subagent | yes | haiku | pending |

@@ -1,4 +1,4 @@
-# SOAL.md — Project Scratchpad & Living Context
+# SOUL.md — Project Scratchpad & Living Context
 
 > *This is not the rulebook (that's AGENTS.md). This is the heart of the project —
 > the why, the open questions, the honest state of things.*
@@ -7,12 +7,12 @@
 
 ## 1. Bismillah
 
-Yeh project hai mera apna granary — Badi Bakhar. Duniya mein knowledge har jagah se
+Yeh project hai mera apna knowledge home — Badi Bakhar. Duniya mein knowledge har jagah se
 aati hai: koi WhatsApp pe kuch forward kar deta hai, YouTube pe ek video se ghante
 nikal jaate hain, Instagram pe koi reel dekhi aur ek idea spark ho gaya. Problem yeh
 hai ki yeh sab kahin jaata nahi — browser tabs band hote hain, chat scroll ho jaati
 hai, aur woh insight jo kabhi thi, gayab ho jaati hai. Badi Bakhar is ka jawab hai:
-ek ghar, ek granary, jahan har daaney ko rakh sako — processed, linked, queryable.
+ek ghar, ek knowledge home, jahan har cheez ko rakh sako — processed, linked, queryable.
 Yahan knowledge aati hai aur yahan se nikalnay ka koi darwaza nahi hota.
 
 ---
@@ -24,17 +24,17 @@ Jab yeh system sahi se chal raha hoga, kuch aisa dikhega:
 - Subah uthke ek YouTube video dekha, ek idea aaya — ek simple command se capture
   ho jaata hai, aur system khud batata hai ki yeh 3 purani notes se connect hota hai.
 - Kisi ne WhatsApp pe kuch bheja — I process it, system rate karta hai reliability,
-  aur ya toh granary mein jaata hai ya discard ho jaata hai. Koi clutter nahi.
-- Mujhe ek soal hai — koi question jo dimag mein ghoom raha hai. Main AI se poochhta
+  aur ya toh knowledge home mein jaata hai ya discard ho jaata hai. Koi clutter nahi.
+- Mujhe ek soul hai — koi question jo dimag mein ghoom raha hai. Main AI se poochhta
   hoon, aur woh internet pe nahi jaata — meri apni notes mein search karta hai aur
   meri apni knowledge se jawab deta hai. Yeh feel different hai.
 - Weeks baad, main keh sakta hoon: "us topic pe mere paas kya hai?" — aur ek honest
   inventory mil jaati hai, not browser bookmarks, not chat history.
-- System lightweight rehta hai. No over-engineering. Grain by grain, harvest by harvest.
+- System lightweight rehta hai. No over-engineering. Piece by piece, day by day.
 
 ---
 
-## 3. Open Soals (Current Design Questions)
+## 3. Open Souls (Current Design Questions)
 
 Yeh genuine open questions hain — abhi koi final answer nahi hai.
 
@@ -85,12 +85,12 @@ Honest inventory — no overstating:
   `inbox/opencode`. This is the AI's cross-session memory.
 - **opencode.json** — Config wired up: AGENTS.md + program.md as instructions,
   bash permission set to `ask`, watcher ignores `OS/data/` and `node_modules`
-- **inbox/soal** — Question capture queue exists (currently empty, waiting for use)
+- **inbox/soul** — Question capture queue exists (currently empty, waiting for use)
 - **Source stubs** — `OS/sources/` has stub files for instagram, web, whatapp,
   youtube — placeholders waiting to be filled when those sources go live
 
 What's rough: `OS/data/` is completely empty. No notes have been processed yet.
-The system is a granary with a roof and walls but no grain inside — yet.
+The system is a knowledge home with a structure but no content inside — yet.
 
 ---
 
@@ -104,12 +104,12 @@ Short-term, yeh karna hai:
   exactly how it will work (email bridge? manual paste? screenshot OCR?)
 - **Decide on linking strategy** — Pick wikilinks or tags-only before notes start
   accumulating and retroactively changing becomes painful
-- **inbox/soal processing** — Define the soal → `OS/data/soal/` pipeline and test
+- **inbox/soul processing** — Define the soul → `OS/data/soul/` pipeline and test
   it with one real question
 - **First evergreen note** — Identify one piece of knowledge that's stable enough
   to deserve `evergreen` status, and understand what that decision actually feels like
 
 ---
 
-*Last updated: 2026-03-17 — Agent 6 (soal-context)*
+*Last updated: 2026-03-17 — Agent 6 (soul-context)*
 *This file is a living document. Update it when the vision shifts or questions get answered.*

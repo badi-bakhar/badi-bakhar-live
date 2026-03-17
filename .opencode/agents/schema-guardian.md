@@ -47,4 +47,4 @@ Valid values:
 - Never read inbox/opencode.
 
 ## Working principle
-Schema consistency is what makes the granary queryable. One field with the wrong value breaks filtering. Report every violation — no exceptions, no assumptions.
+Schema consistency is what makes the knowledge home queryable. One field with the wrong value breaks filtering. Report every violation — no exceptions, no assumptions.

@@ -40,7 +40,7 @@ If no relevant files exist in `OS/data/`, say so clearly:
 
 Then suggest:
 - Which registered source (from `OS/sources/index.md`) might have this information
-- Whether this topic should be captured as a soal in `inbox/soal` for future investigation
+- Whether this topic should be captured as a soul in `inbox/soul` for future investigation
 
 ## Rules
 

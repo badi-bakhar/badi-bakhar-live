@@ -21,7 +21,7 @@ Append-only. Never edit past entries. Add new entries at the top.
 - .opencode/commands/ — 3 commands: /ingest, /ask, /add-source
 - OS/sources/ — 6 sources registered: opencode, web, youtube, whatsapp, instagram, paperclip, openfang
 - OS/data/ — 9 subdirectories scaffolded with READMEs
-- inbox/ — soal queue + README
+- inbox/ — soul queue + README
 
 ### Knowledge Captured
 - 2026-03-17-paperclip-ai-agent-orchestration.md (OS/data/web/)
