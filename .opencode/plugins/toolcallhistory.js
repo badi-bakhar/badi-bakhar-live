@@ -22,6 +22,10 @@ export const ToolCallHistoryPlugin = async () => {
   // child sessionID → { parentID, agent, startMs }
   const childSessions = {}
 
+  // Track which child sessionID is spawned by which parent + agent
+  // key: parentSessionID||agent → childSessionID
+  const spawnedChildren = {}
+
   // ── Helpers ──────────────────────────────────────────────────────────────
 
   async function push(instance, body) {
@@ -163,6 +167,11 @@ export const ToolCallHistoryPlugin = async () => {
           // Increment cross-session spawn total for this agent type
           spawnTotals[agent] = (spawnTotals[agent] || 0) + 1
 
+          // Store: parentSessionID||agent → agent (for lookup when child goes idle)
+          const key = `${sessionID}||${agent}`
+          spawnedChildren[key] = agent
+
+          // Also try to update any child session that hasn't been tagged yet
           for (const [childID, info] of Object.entries(childSessions)) {
             if (info.parentID === sessionID && info.agent === "") {
               childSessions[childID].agent = agent
@@ -191,7 +200,24 @@ export const ToolCallHistoryPlugin = async () => {
         const info = childSessions[sessionID]
         if (info) {
           const durationSecs = ((Date.now() - info.startMs) / 1000).toFixed(3)
-          const agent = info.agent || "unknown"
+          
+          // Determine agent name from three sources (in order of preference):
+          // 1. Direct mapping (cached from subtask part)
+          let agent = info.agent
+          
+          // 2. If not found, search spawnedChildren for this sessionID
+          if (!agent || agent === "") {
+            for (const [key, val] of Object.entries(spawnedChildren)) {
+              const [parentID, agentName] = key.split("||")
+              if (parentID === info.parentID && !agent) {
+                agent = agentName
+                break
+              }
+            }
+          }
+          
+          // 3. Fallback to "unknown"
+          agent = agent || "unknown"
 
           const body = [
             `# HELP subagent_duration_seconds Wall-clock duration of a subagent session`,
