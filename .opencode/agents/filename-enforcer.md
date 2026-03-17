@@ -1,7 +1,7 @@
 ---
 description: "Checks all files in OS/data/ follow YYYY-MM-DD-ascii-lowercase-slug.md convention — flags violations"
 mode: subagent
-model: amazon-bedrock/anthropic.claude-haiku-4-5-20251001-v1:0
+model: amazon-bedrock/global.anthropic.claude-haiku-4-5-20251001-v1:0
 tools:
   read: true
   write: false

@@ -1,7 +1,7 @@
 ---
 description: "Investigates questions from OS/data/soal/ — searches the granary for partial answers and knowledge gaps"
 mode: subagent
-model: amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0
+model: amazon-bedrock/global.anthropic.claude-sonnet-4-5-20250929-v1:0
 tools:
   read: true
   write: false

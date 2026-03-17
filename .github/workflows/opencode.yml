@@ -37,7 +37,7 @@ jobs:
           AWS_PROFILE: ""
           AWS_DEFAULT_REGION: ap-south-1
         with:
-          model: amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0
+          model: amazon-bedrock/global.anthropic.claude-sonnet-4-5-20250929-v1:0
           prompt: |
             You are the Badi Bakhar AI agent — a personal knowledge OS assistant.
             Read AGENTS.md first. Then handle the request following the workflows defined there.

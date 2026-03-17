@@ -15,8 +15,8 @@ description: "Available Amazon Bedrock models for Badi Bakhar agents — IDs, co
 
 | Model | Bedrock ID | Use when |
 |-------|-----------|----------|
-| Claude Haiku 4.5 | `anthropic.claude-haiku-4-5-20251001-v1:0` | Classification, pattern matching, frontmatter generation, file ops, inbox triage |
-| Claude Sonnet 4.5 | `anthropic.claude-sonnet-4-5-20250929-v1:0` | Complex reasoning, judgment, synthesis, reliability rating, evergreen evaluation |
+| Claude Haiku 4.5 | `global.anthropic.claude-haiku-4-5-20251001-v1:0` | Classification, pattern matching, frontmatter generation, file ops, inbox triage |
+| Claude Sonnet 4.5 | `global.anthropic.claude-sonnet-4-5-20250929-v1:0` | Complex reasoning, judgment, synthesis, reliability rating, evergreen evaluation |
 | Claude Sonnet 4.6 | `anthropic.claude-sonnet-4-6` | Available but prefer Sonnet 4.5 for cost consistency |
 
 ## Model Selection Rule
@@ -38,11 +38,11 @@ description: "Available Amazon Bedrock models for Badi Bakhar agents — IDs, co
 ## Agent Frontmatter Reference
 
 ```yaml
-model: amazon-bedrock/anthropic.claude-haiku-4-5-20251001-v1:0
+model: amazon-bedrock/global.anthropic.claude-haiku-4-5-20251001-v1:0
 ```
 
 ```yaml
-model: amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0
+model: amazon-bedrock/global.anthropic.claude-sonnet-4-5-20250929-v1:0
 ```
 
 ## Cost Guidance

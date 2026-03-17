@@ -1,7 +1,7 @@
 ---
 description: "Finds connections between notes in OS/data/ — suggests cross-references and promotes notes to linked status"
 mode: subagent
-model: amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0
+model: amazon-bedrock/global.anthropic.claude-sonnet-4-5-20250929-v1:0
 tools:
   read: true
   write: true

@@ -1,7 +1,7 @@
 ---
 description: "Audits and improves tags on notes in OS/data/ — ensures consistency, no Devanagari in tags"
 mode: subagent
-model: amazon-bedrock/anthropic.claude-haiku-4-5-20251001-v1:0
+model: amazon-bedrock/global.anthropic.claude-haiku-4-5-20251001-v1:0
 tools:
   read: true
   write: true

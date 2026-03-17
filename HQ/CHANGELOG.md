@@ -11,7 +11,7 @@ Append-only. Never edit past entries. Add new entries at the top.
 - Created repo: badi-bakhar/badi-bakhar-live
 - Created IAM user: opencode-badi-bakhar (AWS account 754512323422)
 - Configured AWS Bedrock: ap-south-1, profile: badi-bakhar
-- Model: anthropic.claude-sonnet-4-5-20250929-v1:0 (Sonnet) + anthropic.claude-haiku-4-5-20251001-v1:0 (Haiku)
+- Model: global.anthropic.claude-sonnet-4-5-20250929-v1:0 (Sonnet) + global.anthropic.claude-haiku-4-5-20251001-v1:0 (Haiku)
 
 ### Project Scaffold
 - AGENTS.md — master AI instruction file (246 lines)

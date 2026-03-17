@@ -1,7 +1,7 @@
 ---
 description: "Reads inbox/opencode to reconstruct what happened in previous AI sessions — answers history questions"
 mode: subagent
-model: amazon-bedrock/anthropic.claude-haiku-4-5-20251001-v1:0
+model: amazon-bedrock/global.anthropic.claude-haiku-4-5-20251001-v1:0
 tools:
   read: true
   write: false

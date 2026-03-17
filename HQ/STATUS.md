@@ -28,7 +28,7 @@ Last updated: 2026-03-17
 - Status: configured, not confirmed running
 
 ## Provider
-- Model: amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0
+- Model: amazon-bedrock/global.anthropic.claude-sonnet-4-5-20250929-v1:0
 - Region: ap-south-1
 - Profile: badi-bakhar
 

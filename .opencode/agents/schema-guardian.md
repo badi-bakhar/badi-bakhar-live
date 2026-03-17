@@ -1,7 +1,7 @@
 ---
 description: "Audits all notes in OS/data/ for frontmatter schema compliance — flags missing or wrong fields"
 mode: subagent
-model: amazon-bedrock/anthropic.claude-haiku-4-5-20251001-v1:0
+model: amazon-bedrock/global.anthropic.claude-haiku-4-5-20251001-v1:0
 tools:
   read: true
   write: false

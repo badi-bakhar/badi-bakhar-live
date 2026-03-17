@@ -1,7 +1,7 @@
 ---
 description: "Processes WhatsApp captures in inbox/ — detects language, rates reliability, extracts signal from forwards"
 mode: subagent
-model: amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0
+model: amazon-bedrock/global.anthropic.claude-sonnet-4-5-20250929-v1:0
 tools:
   read: true
   write: true
