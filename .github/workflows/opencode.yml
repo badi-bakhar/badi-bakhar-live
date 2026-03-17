@@ -23,7 +23,7 @@ jobs:
       issues: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 1
           persist-credentials: false
@@ -33,12 +33,12 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_REGION: ap-south-1
         with:
           model: amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0
           prompt: |
             You are the Badi Bakhar AI agent — a personal knowledge OS assistant.
             Read AGENTS.md first. Then handle the request following the workflows defined there.
-            For scheduled runs (Monday 9am UTC): summarize the week's inbox, surface any unprocessed notes,
-            and open a GitHub issue with a weekly digest.
-            Never delete files. Never modify inbox/opencode. Always confirm before moving files.
+            For scheduled or manual runs: list all files in OS/data/, count notes per subdirectory,
+            check inbox/ for any unprocessed items (excluding inbox/opencode), and reply with
+            a brief system status report. Never delete files. Never modify inbox/opencode.
