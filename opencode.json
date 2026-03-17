@@ -20,8 +20,7 @@
   "provider": {
     "amazon-bedrock": {
       "options": {
-        "region": "ap-south-1",
-        "profile": "badi-bakhar"
+        "region": "ap-south-1"
       }
     }
   }
