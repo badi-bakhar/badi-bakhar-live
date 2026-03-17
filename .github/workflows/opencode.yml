@@ -34,6 +34,8 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ap-south-1
+          AWS_PROFILE: ""
+          AWS_DEFAULT_REGION: ap-south-1
         with:
           model: amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0
           prompt: |
